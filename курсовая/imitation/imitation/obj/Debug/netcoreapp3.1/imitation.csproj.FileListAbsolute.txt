@@ -1,0 +1,13 @@
+C:\Users\User\source\repos\4sem\OOP\курсовая\imitation\imitation\obj\Debug\netcoreapp3.1\imitation.csprojAssemblyReference.cache
+C:\Users\User\source\repos\4sem\OOP\курсовая\imitation\imitation\obj\Debug\netcoreapp3.1\imitation.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\4sem\OOP\курсовая\imitation\imitation\obj\Debug\netcoreapp3.1\imitation.AssemblyInfo.cs
+C:\Users\User\source\repos\4sem\OOP\курсовая\imitation\imitation\obj\Debug\netcoreapp3.1\imitation.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\4sem\OOP\курсовая\imitation\imitation\bin\Debug\netcoreapp3.1\imitation.exe
+C:\Users\User\source\repos\4sem\OOP\курсовая\imitation\imitation\bin\Debug\netcoreapp3.1\imitation.deps.json
+C:\Users\User\source\repos\4sem\OOP\курсовая\imitation\imitation\bin\Debug\netcoreapp3.1\imitation.runtimeconfig.json
+C:\Users\User\source\repos\4sem\OOP\курсовая\imitation\imitation\bin\Debug\netcoreapp3.1\imitation.runtimeconfig.dev.json
+C:\Users\User\source\repos\4sem\OOP\курсовая\imitation\imitation\bin\Debug\netcoreapp3.1\imitation.dll
+C:\Users\User\source\repos\4sem\OOP\курсовая\imitation\imitation\bin\Debug\netcoreapp3.1\imitation.pdb
+C:\Users\User\source\repos\4sem\OOP\курсовая\imitation\imitation\obj\Debug\netcoreapp3.1\imitation.dll
+C:\Users\User\source\repos\4sem\OOP\курсовая\imitation\imitation\obj\Debug\netcoreapp3.1\imitation.pdb
+C:\Users\User\source\repos\4sem\OOP\курсовая\imitation\imitation\obj\Debug\netcoreapp3.1\imitation.genruntimeconfig.cache

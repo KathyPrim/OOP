@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxFlow", "MaxFlow\MaxFlow.csproj", "{8E2FF422-1960-4729-8874-55B29B79CEFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E2FF422-1960-4729-8874-55B29B79CEFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E2FF422-1960-4729-8874-55B29B79CEFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E2FF422-1960-4729-8874-55B29B79CEFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E2FF422-1960-4729-8874-55B29B79CEFB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0BE69D62-BCA7-4448-A5E7-94A31951B080}
+	EndGlobalSection
+EndGlobal
