@@ -94,14 +94,28 @@ namespace imitation
     class Ship
     {
         public String article;
-        uint wholesale_amount;
-        uint where;
+        public uint wholesale_amount;
+        public uint where;
 
         public Ship(string s = "", uint a = 0, uint w = 0)
         {
             this.article = s;
             this.wholesale_amount = a;
             this.where = w;
+        }
+    }
+
+    interface IBill
+    {
+        protected static double bill;
+
+        protected static void add_money(double a)
+        {
+            bill += a;
+        }
+        public static double get_money()
+        {
+            return bill;
         }
     }
 }

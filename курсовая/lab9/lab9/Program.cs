@@ -21,6 +21,19 @@ namespace lab9
 
     }
 
+    interface IBill
+    {
+        private static double bill;
+        protected static void add_money(double a)
+        {
+            bill += a;
+        }
+        public static double get_money()
+        {
+            return bill;
+        }
+    }
+
     abstract class Piece // единица
     {
         public Unit unit; // единица измерения -- в них количество товара и за 1 единицу этого стоимость
@@ -64,7 +77,7 @@ namespace lab9
 
     }
 
-    class Storage // склад
+    class Storage : IBill // склад
     {
         public List<Item> cold_storage; // список товаров, хранящихся в холодильнике
         public List<Item> wet_storage; // список товаров на влажном складе
@@ -155,11 +168,16 @@ namespace lab9
         public bool Buy(String article, ContainerType container, float amount)
         {
             Item item = new Item(); // переменная для хранения наименования склада
+            bool shit = false;
             if(Find(article, container, ref item)) // ищем элемент
             {
-                return item.Remove(amount); // если вохможно, убираем нужное количество, если нет -- вернём false
+                shit = item.Remove(amount); // если вохможно, убираем нужное количество, если нет -- вернём false
+                if (shit)
+                {
+                    IBill.add_money(item.price * amount); // добавляем денюжки на счёт
+                }
             }
-            return false; // если элемент не был найден
+            return shit; // если элемент не был найден
         }
 
         public bool Sell(String article, ContainerType container, float amount)

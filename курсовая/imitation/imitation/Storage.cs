@@ -4,14 +4,14 @@ using System.Text;
 
 namespace imitation
 {
-    class Storage // склад
+    class Storage : IBill // склад
     {
         public List<Item> cold_storage; // список товаров, хранящихся в холодильнике
         public List<Item> wet_storage; // список товаров на влажном складе
         public List<Item> dry_storage; // список товаров в сухом складе
         public uint curr_date; // текущая дата
-        public Queue<Ship> waiting_list; // лист ожидания
-        public Queue<Ship> order; // заказы, поступившие сегодня
+        public List<Ship> waiting_list; // лист ожидания
+        public List<Ship> order; // заказы, поступившие сегодня
         public List<Ship> ships; // заказы, которые нужно сегодня отправить
 
         public Storage(uint date = 0) // конструктор класса
@@ -20,9 +20,10 @@ namespace imitation
             wet_storage = new List<Item>();
             dry_storage = new List<Item>();
             curr_date = date;
-            waiting_list = new Queue<Ship>();
-            order = new Queue<Ship>();
+            waiting_list = new List<Ship>();
+            order = new List<Ship>();
             ships = new List<Ship>();
+            IBill.bill = 0;
         }
 
         public bool Find(String article, ContainerType container, ref Item item) // поиск элемента на складе типа container
@@ -100,21 +101,41 @@ namespace imitation
             return false; // если элемент не был найден
         }
 
-        public bool Sell(String article, ContainerType container, uint amount, uint where)
+        public bool Sell(String article, uint amount, uint where)
         {
             bool r = false;  // если элемент не был найден
             Item item = new Item(); // переменная для хранения наименования склада
-            if (Find(article, container, ref item)) // ищем элемент
+            if (Find(article, ref item)) // ищем элемент
             {
                 r = item.Retail_remove(amount); // если возможно, убираем нужное количество, если нет -- вернём false
                 Ship ship = new Ship(article, amount, where);
                 if (r)
                 {
                     ships.Add(ship);
+                    IBill.add_money(item.price * amount);
                 }
                 else
                 {
-                    waiting_list.Enqueue(ship);
+                    waiting_list.Add(ship);
+                }
+            }
+            return r;
+        }
+
+        public bool WS_Sell(Ship s)
+        {
+            bool r = false;  // если элемент не был найден
+            Item item = new Item(); // переменная для хранения наименования склада
+            if (Find(s.article, ref item)) // ищем элемент
+            {
+                r = item.Wholesale_remove(s.wholesale_amount); // если возможно, убираем нужное количество, если нет -- вернём false
+                if (r)
+                {
+                    ships.Add(s);
+                }
+                else
+                {
+                    waiting_list.Add(s);
                 }
             }
             return r;
@@ -135,7 +156,7 @@ namespace imitation
                 else
                 {
                     Ship ship = new Ship(article, amount*item.pack_amount, where);
-                    waiting_list.Enqueue(ship);
+                    waiting_list.Add(ship);
                 }
             }
             return r;
@@ -215,6 +236,37 @@ namespace imitation
                 }
             }
             return false; // если элемент не был найден
+        }
+
+        public void Sell_all()
+        {
+            int shit = waiting_list.Count;
+            for (int i = 0; i < shit; i++)
+            {
+                WS_Sell(waiting_list[i]);
+            }
+            for (int i = 0; i < order.Count; i++)
+            {
+                WS_Sell(order[i]);
+            }
+            Add_all();
+        }
+
+        public void Add_all()
+        {
+            Random smol = new Random();
+            foreach(Item i in cold_storage)
+            {
+                i.wholesale_amount += (uint)smol.Next(100);
+            }
+            foreach (Item i in wet_storage)
+            {
+                i.wholesale_amount += (uint)smol.Next(100);
+            }
+            foreach (Item i in dry_storage)
+            {
+                i.wholesale_amount += (uint)smol.Next(100);
+            }
         }
     }
 }
