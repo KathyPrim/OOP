@@ -37,7 +37,9 @@ namespace imitation
                 myStorage.Sell_all();
                 Console.WriteLine("Доставок на завтра: {0}, в листе ожидания: {1}", myStorage.ships.Count, myStorage.waiting_list.Count);
                 ships_amount = smol.Next(10);
-                Thread.Sleep(3000);
+                myStorage.ships.Clear();
+                myStorage.order.Clear();
+                //Thread.Sleep(3000);
             }
         }
     }

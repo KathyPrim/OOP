@@ -243,7 +243,12 @@ namespace imitation
             int shit = waiting_list.Count;
             for (int i = 0; i < shit; i++)
             {
-                WS_Sell(waiting_list[i]);
+                if (WS_Sell(waiting_list[i]))
+                {
+                    waiting_list.Remove(waiting_list[i]);
+                    shit--;
+                    i--;
+                }
             }
             for (int i = 0; i < order.Count; i++)
             {
@@ -257,15 +262,15 @@ namespace imitation
             Random smol = new Random();
             foreach(Item i in cold_storage)
             {
-                i.wholesale_amount += (uint)smol.Next(100);
+                i.wholesale_amount += (uint)smol.Next(25);
             }
             foreach (Item i in wet_storage)
             {
-                i.wholesale_amount += (uint)smol.Next(100);
+                i.wholesale_amount += (uint)smol.Next(50);
             }
             foreach (Item i in dry_storage)
             {
-                i.wholesale_amount += (uint)smol.Next(100);
+                i.wholesale_amount += (uint)smol.Next(50);
             }
         }
     }
