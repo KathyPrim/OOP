@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\source\\repos\\MaxFlow\\MaxFlow\\MaxFlow.csproj": {}
+    "C:\\Users\\User\\source\\repos\\4sem\\OOP\\курсовая\\MaxFlow\\MaxFlow\\MaxFlow.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\source\\repos\\MaxFlow\\MaxFlow\\MaxFlow.csproj": {
+    "C:\\Users\\User\\source\\repos\\4sem\\OOP\\курсовая\\MaxFlow\\MaxFlow\\MaxFlow.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\MaxFlow\\MaxFlow\\MaxFlow.csproj",
+        "projectUniqueName": "C:\\Users\\User\\source\\repos\\4sem\\OOP\\курсовая\\MaxFlow\\MaxFlow\\MaxFlow.csproj",
         "projectName": "MaxFlow",
-        "projectPath": "C:\\Users\\User\\source\\repos\\MaxFlow\\MaxFlow\\MaxFlow.csproj",
+        "projectPath": "C:\\Users\\User\\source\\repos\\4sem\\OOP\\курсовая\\MaxFlow\\MaxFlow\\MaxFlow.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\MaxFlow\\MaxFlow\\obj\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\4sem\\OOP\\курсовая\\MaxFlow\\MaxFlow\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

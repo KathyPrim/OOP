@@ -11,3 +11,16 @@ C:\Users\User\source\repos\MaxFlow\MaxFlow\obj\Debug\netcoreapp3.1\MaxFlow.cspro
 C:\Users\User\source\repos\MaxFlow\MaxFlow\obj\Debug\netcoreapp3.1\MaxFlow.dll
 C:\Users\User\source\repos\MaxFlow\MaxFlow\obj\Debug\netcoreapp3.1\MaxFlow.pdb
 C:\Users\User\source\repos\MaxFlow\MaxFlow\obj\Debug\netcoreapp3.1\MaxFlow.genruntimeconfig.cache
+C:\Users\User\source\repos\4sem\OOP\курсовая\MaxFlow\MaxFlow\bin\Debug\netcoreapp3.1\MaxFlow.exe
+C:\Users\User\source\repos\4sem\OOP\курсовая\MaxFlow\MaxFlow\bin\Debug\netcoreapp3.1\MaxFlow.deps.json
+C:\Users\User\source\repos\4sem\OOP\курсовая\MaxFlow\MaxFlow\bin\Debug\netcoreapp3.1\MaxFlow.runtimeconfig.json
+C:\Users\User\source\repos\4sem\OOP\курсовая\MaxFlow\MaxFlow\bin\Debug\netcoreapp3.1\MaxFlow.runtimeconfig.dev.json
+C:\Users\User\source\repos\4sem\OOP\курсовая\MaxFlow\MaxFlow\bin\Debug\netcoreapp3.1\MaxFlow.dll
+C:\Users\User\source\repos\4sem\OOP\курсовая\MaxFlow\MaxFlow\bin\Debug\netcoreapp3.1\MaxFlow.pdb
+C:\Users\User\source\repos\4sem\OOP\курсовая\MaxFlow\MaxFlow\obj\Debug\netcoreapp3.1\MaxFlow.csprojAssemblyReference.cache
+C:\Users\User\source\repos\4sem\OOP\курсовая\MaxFlow\MaxFlow\obj\Debug\netcoreapp3.1\MaxFlow.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\4sem\OOP\курсовая\MaxFlow\MaxFlow\obj\Debug\netcoreapp3.1\MaxFlow.AssemblyInfo.cs
+C:\Users\User\source\repos\4sem\OOP\курсовая\MaxFlow\MaxFlow\obj\Debug\netcoreapp3.1\MaxFlow.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\4sem\OOP\курсовая\MaxFlow\MaxFlow\obj\Debug\netcoreapp3.1\MaxFlow.dll
+C:\Users\User\source\repos\4sem\OOP\курсовая\MaxFlow\MaxFlow\obj\Debug\netcoreapp3.1\MaxFlow.pdb
+C:\Users\User\source\repos\4sem\OOP\курсовая\MaxFlow\MaxFlow\obj\Debug\netcoreapp3.1\MaxFlow.genruntimeconfig.cache
